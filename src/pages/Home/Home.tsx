@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaReact } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
-import Terminal from "./components/Terminal";
 export default function Home() {
   const [content, setContent] = useState("");
   const [lineNumbers, setLineNumbers] = useState<number[]>([1]);
@@ -16,19 +15,31 @@ export default function Home() {
     <div className="bg-mainCompBg w-full h-full text-white px-6 flex flex-col justify-start items-start gap-5">
       <div className="flex justify-start items-start bg-folderBar w-full">
         <div className="px-3 py-2 flex justify-between items-center text-xs border border-mainCompBg min-w-[150px] hover:bg-mainCompBg/10 cursor-pointer">
-          <p className="flex justify-center items-center gap-3"><FaReact color="#61DAFB" size={20} /> Home.tsx <IoMdClose size={20} /></p>
+          <p className="flex justify-center items-center gap-3">
+            <FaReact color="#61DAFB" size={20} /> Home.tsx{" "}
+            <IoMdClose size={20} />
+          </p>
         </div>
 
         <div className="px-3 py-2 flex justify-between items-center text-xs border border-mainCompBg min-w-[150px] hover:bg-mainCompBg/10 cursor-pointer">
-          <p className="flex justify-center items-center gap-3"><FaReact color="#61DAFB" size={20} /> Main.tsx <IoMdClose size={20} /></p>
+          <p className="flex justify-center items-center gap-3">
+            <FaReact color="#61DAFB" size={20} /> Main.tsx{" "}
+            <IoMdClose size={20} />
+          </p>
         </div>
 
         <div className="px-3 py-2 flex justify-between items-center text-xs border border-mainCompBg min-w-[150px] hover:bg-mainCompBg/10 cursor-pointer">
-          <p className="flex justify-center items-center gap-3"><FaReact color="#61DAFB" size={20} /> FolderBar.tsx <IoMdClose size={20} /></p>
+          <p className="flex justify-center items-center gap-3">
+            <FaReact color="#61DAFB" size={20} /> FolderBar.tsx{" "}
+            <IoMdClose size={20} />
+          </p>
         </div>
 
         <div className="px-3 py-2 flex justify-between items-center text-xs border border-mainCompBg min-w-[150px] hover:bg-mainCompBg/10 cursor-pointer">
-          <p className="flex justify-center items-center gap-3"><FaReact color="#61DAFB" size={20} /> LeftBar.tsx <IoMdClose size={20} /></p>
+          <p className="flex justify-center items-center gap-3">
+            <FaReact color="#61DAFB" size={20} /> LeftBar.tsx{" "}
+            <IoMdClose size={20} />
+          </p>
         </div>
       </div>
       <div className="flex justify-start items-start h-full w-full">
@@ -52,9 +63,6 @@ export default function Home() {
           ></textarea>
         </div>
       </div>
-      {/* <div className="w-full h-full fixed bottom-0 right-0">
-        <Terminal />
-      </div> */}
 
       <div className="h-[30px] w-full  bottom-0">
         <div className="flex justify-end px-4 items-center h-full w-full gap-4 text-xs">
@@ -62,7 +70,7 @@ export default function Home() {
           <p>spaces2</p>
           <p>utf-8</p>
           <p>CRLF</p>
-          <p>{ } TypeScript JSX</p>
+          <p>{} TypeScript JSX</p>
           <p>Codeium</p>
         </div>
       </div>
